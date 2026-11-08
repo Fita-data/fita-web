@@ -1,0 +1,61 @@
+---
+const docsUrl = 'https://github.com/Fita-data/fita-docs';
+const repoUrl = 'https://github.com/Fita-data/fita';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta
+			name="description"
+			content="Fita is an open source master data management engine."
+		/>
+		<title>Fita</title>
+	</head>
+	<body>
+		<main>
+			<h1>Fita</h1>
+			<p class="lead">
+				Open source master data management. One golden record per customer and
+				supplier, built from the systems you already have, with the source of
+				every value.
+			</p>
+			<ul>
+				<li>Reads databases, files and applications. Read only.</li>
+				<li>Finds the records that describe the same entity.</li>
+				<li>Keeps the source of every value. Every automatic decision can be undone.</li>
+				<li>Serves the result through a REST API, exports and an MCP server for AI agents.</li>
+			</ul>
+			<p>Fita is in early development. Expect breaking changes until v1.0.</p>
+			<p class="links">
+				<a href={repoUrl}>GitHub</a>
+				<a href={docsUrl}>Documentation</a>
+			</p>
+		</main>
+	</body>
+</html>
+
+<style is:global>
+	:root {
+		color-scheme: light dark;
+		font-family: system-ui, sans-serif;
+		line-height: 1.5;
+	}
+	main {
+		max-width: 40rem;
+		margin: 0 auto;
+		padding: 4rem 1rem;
+	}
+	h1 {
+		font-size: 2.5rem;
+		margin: 0 0 1rem;
+	}
+	.lead {
+		font-size: 1.25rem;
+	}
+	.links {
+		display: flex;
+		gap: 1.5rem;
+	}
+</style>
